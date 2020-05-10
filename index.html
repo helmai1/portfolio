@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
 
 <head>
     <meta charset="utf-8">
@@ -15,6 +15,32 @@
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+        <a class="navbar-brand mb-0 h1 page-scroll" href="#home">Helmi Effendi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link page-scroll" href="#about">About<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link page-scroll" href="#portfolio">Portfolio<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link page-scroll" href="#contact">Contact<span
+                            class="sr-only">(current)</span></a>
+                </li>
+        </div>
+    </nav>
+
+
     <!-- jumbotron -->
     <div class="jumbotron text-center">
         <img src="img/profile.jpg" class="rounded-circle" alt="profile-pic">
@@ -125,7 +151,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <p>&copy; copyright 2020 | built with <i style="color: salmon;" data-feather="heart"></i>  by.<a style="color: #f3f4f7;" href="https://www.instagram.com/helmieffendi_s/"> Helmi Effendi</a></p>
+                    <p>&copy; copyright 2020 | built with <i style="color: salmon;" data-feather="heart"></i> by.<a
+                            style="color: #f3f4f7;" href="https://www.instagram.com/helmieffendi_s/"> Helmi Effendi</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -134,14 +162,15 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+    </script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script2.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         feather.replace()
