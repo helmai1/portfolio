@@ -50,10 +50,18 @@ $(window).scroll(function () {
     });
 
     //portfolio
-    if(wScroll > $('.portfolio').offset().top -250){
+    if(wScroll > $('.portfolio').offset().top -260){
         $('.portfolio .img-thumbnail').each(function(i){
             setTimeout(function(){
                 $('.portfolio .img-thumbnail').eq(i).addClass('muncul');
+            },300 * (i+1));
+        });
+    }
+
+    if(wScroll > $('.contact').offset().top -300){
+        $('.contact .card').each(function(i){
+            setTimeout(function(){
+                $('.contact .card').eq(i).addClass('muncul');
             },300 * (i+1));
         });
     }

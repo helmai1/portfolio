@@ -37,6 +37,8 @@ section{
     min-height: 500px;
 }
 
+
+/* About */
 .pKiri, .pKanan{
     opacity: 0;
     transform: translate(-50px, 0) rotate(15deg);
@@ -52,6 +54,8 @@ section{
     transform: translate(0,0);
 }
 
+
+/* Portfolio */
 .portfolio {
     background-color: #eee;
     margin-bottom: 30px;
@@ -68,8 +72,19 @@ section{
     transform: translate(0,0);
 }
 
+
+/* Contact */
 .contact{
     min-height: 800px;
+}
+.contact .card{
+    opacity: 0;
+    transform: translate(0, 40px);
+    transition: .5s;
+}
+.contact .card.muncul{
+    opacity: 1;
+    transform: translate(0,0);
 }
 
 footer{
