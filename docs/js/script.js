@@ -1,68 +1,44 @@
-// $('.page-scroll').on('click', function (e) {
+// SHOW MENU
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
 
-//     //ambil isi href
-//     var tujuan = $(this).attr('href');
-//     // console.log(tujuan);    
-
-//     //tangkap elemen ybs
-//     var elemenTujuan = $(tujuan);
-//     // console.log(elemenTujuan);    
-
-//     $('body').scrollTop(elemenTujuan.offset().top);
-
-//     // e.preventDefault();
-// });
-
-$('.page-scroll').on('click', function (e) {
-
-    var tujuan = $(this).attr('href');
-
-    var elemenTujuan = $(tujuan);
-
-    $('html , body').animate({
-        scrollTop: elemenTujuan.offset().top - 55
-    }, 1000, 'easeInOutExpo');
-
-    e.preventDefault();
-});
-
-//parallax
-
-//about
-$(window).on('load',function(){
-    $('.pKiri').addClass('pMuncul');
-    $('.pKanan').addClass('pMuncul');
-});
-
-$(window).scroll(function () {
-    var wScroll = $(this).scrollTop();
-    //    console.log(wScroll);    untuk memeriksa nilai scroll
-    
-    //jumbotron
-    $('.jumbotron img').css({
-        'transform': 'translate(0px, ' + wScroll / 4 + '%)'
+  // Validate that variables exist
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      // We add the show-menu class to the div tag with the nav__menu class
+      nav.classList.toggle('show-menu');
     });
-    $('.jumbotron h1').css({
-        'transform': 'translate(0px, ' + wScroll / 2 + '%)'
-    });
-    $('.jumbotron p').css({
-        'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
-    });
+  }
+};
+showMenu('nav-toggle', 'nav-menu');
 
-    //portfolio
-    if(wScroll > $('.portfolio').offset().top -260){
-        $('.portfolio .img-thumbnail').each(function(i){
-            setTimeout(function(){
-                $('.portfolio .img-thumbnail').eq(i).addClass('muncul');
-            },300 * (i+1));
-        });
+// REMOVE MENU MOBILE
+const navLink = document.querySelectorAll('.nav_link');
+
+function linkAction() {
+  const navMenu = document.getElementById('nav-menu');
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove('show-menu');
+}
+navLink.forEach((n) => n.addEventListener('click', linkAction));
+
+// SCROLL SECTIONS ACTIVE LINK
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute('id');
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link');
+    } else {
+      document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link');
     }
-
-    if(wScroll > $('.contact').offset().top -300){
-        $('.contact .card').each(function(i){
-            setTimeout(function(){
-                $('.contact .card').eq(i).addClass('muncul');
-            },300 * (i+1));
-        });
-    }
-});
+  });
+}
+window.addEventListener('scroll', scrollActive);

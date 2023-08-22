@@ -5,231 +5,64 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Portfolio Helmi</title>
     <link rel="stylesheet" href="css/style.css">
-
-
+    <!-- Box Icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <a class="navbar-brand mb-0 h1 page-scroll" href="#home">Helmi Effendi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link page-scroll" href="#about">About<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link page-scroll" href="#portfolio">Portfolio<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link page-scroll" href="#contact">Contact<span class="sr-only">(current)</span></a>
-                </li>
-        </div>
-    </nav>
-
-
-    <!-- jumbotron -->
-    <div class="row">
-        <div class="jumbotron text-center col-sm-12">
-            <img src="img/profile.jpg" class="rounded-circle" alt="profile-pic">
-            <h1>Helmi Siswo Effendi</h1>
-            <p>Web Developer | Game Programmer | College Student</p>
-        </div>
-    </div>
-    <!-- /jumbotron -->
-
-    <!-- about -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">About</h2>
-                    <hr>
-                </div>
+    <!-- Header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav_logo">Helmi</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class='bx bx-home nav_icon'></i>Home
+                        </a>
+                    </li>  
+                    <li class="nav_item">
+                        <a href="#profile" class="nav_link">
+                            <i class='bx bx-user nav_icon'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#education" class="nav_link">
+                            <i class='bx bxs-graduation nav_icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class='bx bx-laptop nav_icon'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#experience" class="nav_link">
+                            <i class='bx bx-briefcase nav_icon'></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#certificates" class="nav_link">
+                            <i class='bx bx-medal nav_icon'></i>Certificates
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#references" class="nav_link">
+                            <i class='bx bx-cloud-download nav_icon'></i>References
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-sm-5 offset-sm-1">
-                    <p class="pKiri ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem delectus eos ab
-                        fugit, eaque
-                        nulla. Dolor debitis explicabo, ullam, quo cum fuga atque facere numquam quaerat voluptate qui
-                        alias ea!</p>
-                </div>
-                <div class="col-sm-5">
-                    <p class="pKanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio
-                        facilis similique?
-                        Non eveniet laudantium dolores beatae repellendus eligendi tenetur sed inventore illum sint quod
-                        consequatur atque, rem qui eius!</p>
-                </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt nav_icon'></i>
             </div>
-        </div>
-    </section>
-    <!-- /about -->
-
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">Portfolio</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href=""><img class="img-thumbnail" src="img/portfolio/1.jpg" alt="portfolio-1"></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href=""><img class="img-thumbnail" src="img/portfolio/1.jpg" alt="portfolio-1"></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href=""><img class="img-thumbnail" src="img/portfolio/1.jpg" alt="portfolio-1"></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href=""><img class="img-thumbnail" src="img/portfolio/1.jpg" alt="portfolio-1"></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href=""><img class="img-thumbnail" src="img/portfolio/1.jpg" alt="portfolio-1"></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href=""><img class="img-thumbnail" src="img/portfolio/1.jpg" alt="portfolio-1"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Portfolio -->
-
-    <!-- contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">Contact</h2>
-                    <hr>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row" style="margin-bottom: 100px;">
-                <div class="col-sm-4">
-                    <div class="card border">
-                        <div class="card-body">
-                          <img src="img/contact/ig.png" width="50px" height="50px" alt="ig">
-                          <a href="https://www.instagram.com/helmieffendi_s/">Instagram</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="img/contact/wa.png" width="50px" height="50px" alt="ig">
-                            <a href="#">+62</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card ">
-                        <div class="card-body">
-                            <img src="img/contact/fb.png" width="50px" height="50px" alt="ig">
-                            <a href="https://www.facebook.com/helmieffendis/">Facebook</a>
-                        </div>
-                      </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 offset-md-3 text-center">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click
-                        untuk Komentar</button>
-                    <!-- Modal -->
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /contact -->
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p>&copy; copyright 2020 | built with <i style="color: salmon;" data-feather="heart"></i> by.<a
-                            style="color: #f3f4f7;" href="https://www.instagram.com/helmieffendi_s/"> Helmi Effendi</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /footer -->
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Saran dan Masukkan</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="nama">Nama</label>
-                            <input type="text" id="nama" class="form-control" placeholder="Masukan Nama">
-                        </div>
-                        <div class="form-group">
-                            <label for="nama">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Masukan Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="nama">No Telepon</label>
-                            <input type="tel" id="telepon" class="form-control" placeholder="Masukan No Telepon">
-                        </div>
-                        <div class="form-group">
-                            <label for="pesan">Pesan</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
-                                placeholder="Masukan Pesan.."></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Modal -->
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+        </nav>
+    </header>
+    <!-- /HEADER -->
+    <main class="l-main bd-container"></main>
     <script src="js/script.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace()
-    </script>
 </body>
 
 </html>
